@@ -17,7 +17,7 @@ const JobList = () => {
       <h1>JobList</h1>
       {jobList &&
         jobList.map((item) => {
-          return <JobItem id={item.id} job={item} />;
+          return <JobItem id={item.id} data={item} />;
         })}
     </S.Container>
   );
