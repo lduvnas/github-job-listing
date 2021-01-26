@@ -9,15 +9,26 @@ const JobDetail = ({ data }) => {
   };
   return (
     <S.Container>
-      <h1>JobDetail</h1>
-      <img height="100" src={data.company_logo} alt={data.company} />
-      <h2>{data.company}</h2>
-      <strong>{data.type}</strong>
-      <a href={data.url}>{data.url}</a>
-      {/* <p>{job.description}</p> */}
+      <S.FlexContainer style={{ justifyContent: "space-between" }}>
+        <S.CompanyLogo>
+          <S.Image src={data.company_logo} alt={data.company} />
+        </S.CompanyLogo>
+
+        <S.TitleContainer>
+          <S.CompanyName>{data.company}</S.CompanyName>
+          <S.JobTitle>{data.title}</S.JobTitle>
+          <a href={data.url}>{data.url}</a>
+        </S.TitleContainer>
+
+        <S.FlexContainer style={{ flexDirection: "column" }}>
+          <S.JobLocation>{data.location}</S.JobLocation>
+          <S.JobType>{data.type}</S.JobType>
+        </S.FlexContainer>
+      </S.FlexContainer>
+
       <main dangerouslySetInnerHTML={createMarkup()} />
 
-      <button onClick={() => history.goBack()}>Go back</button>
+      <S.Button onClick={() => history.goBack()}>Go back</S.Button>
     </S.Container>
   );
 };
