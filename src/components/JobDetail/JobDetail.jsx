@@ -28,7 +28,7 @@ const JobDetail = ({ data }) => {
 
       <main dangerouslySetInnerHTML={createMarkup()} />
 
-      <S.Button onClick={() => history.goBack()}>Go back</S.Button>
+      <S.Button onClick={() => history.push(`/`)}>Go back</S.Button>
     </S.Container>
   );
 };
