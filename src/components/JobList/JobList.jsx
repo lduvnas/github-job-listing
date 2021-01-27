@@ -15,7 +15,7 @@ const JobList = ({ jobList }) => {
         ""
       )}
       {jobList.length === 0 ? (
-        <p>No search results found</p>
+        <S.NoSearchResults>No search results found</S.NoSearchResults>
       ) : (
         jobList.map((job) => {
           return <JobItem id={job.id} key={job.id} data={job} />;
