@@ -18,10 +18,10 @@ export const Button = styled.button`
   background-color: rgb(134, 216, 166);
   border: none;
   color: #fff;
-  text-transform: uppercase;
   border-radius: 10px;
   margin-left: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.04);
+  cursor: pointer;
 `;
 
 SearchInput.displayName = "SearchInput";

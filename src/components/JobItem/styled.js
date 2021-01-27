@@ -11,7 +11,6 @@ export const Container = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.04);
   width: 800px;
   height: 150px;
-  cursor: pointer;
 `;
 
 export const CompanyDetails = styled.div`
@@ -41,7 +40,7 @@ export const Image = styled.img`
 `;
 
 export const CompanyName = styled.h3`
-  font-size: 10px;
+  font-size: 13px;
 `;
 
 export const JobTitle = styled.h2`
@@ -49,7 +48,7 @@ export const JobTitle = styled.h2`
 `;
 
 export const JobLocation = styled.h2`
-  font-size: 15px;
+  font-size: 12px;
 `;
 
 export const JobType = styled.strong``;
@@ -61,6 +60,8 @@ export const Button = styled.button`
   color: #fff;
   border-radius: 10px;
   margin-left: 40px;
+  font-weight: bold;
+  cursor: pointer;
 `;
 
 Container.displayName = "Container";

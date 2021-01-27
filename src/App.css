@@ -28,4 +28,5 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(134, 216, 166);
+  cursor: pointer;
 }
